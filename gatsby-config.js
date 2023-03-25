@@ -10,9 +10,10 @@
 module.exports = {
     siteMetadata: {
         title: `Lanyon`,
-        tagline: `A Gatsby Theme`,
+        tagline: `A Gatsby Theme ported from the Jekyll Theme`,
     },
     plugins: [
+        `gatsby-plugin-react-helmet`,
         {
             resolve: `gatsby-source-filesystem`,
             options: {
@@ -46,5 +47,18 @@ module.exports = {
         },
         `gatsby-plugin-sharp`,
         `gatsby-transformer-sharp`,
+        {
+            resolve: `gatsby-plugin-manifest`,
+            options: {
+                name: `gatsby-starter-lanyon`,
+                short_name: `starter`,
+                start_url: `/`,
+                background_color: `#f7f0eb`,
+                theme_color: `#a2466c`,
+                display: `minimal-ui`,
+                icon: `src/images/gatsby-icon.png`,
+            }
+        },
+        `gatsby-plugin-offline`,
     ],
 }
