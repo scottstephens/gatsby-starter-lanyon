@@ -2,7 +2,7 @@ import React from 'react';
 import { Link, graphql } from "gatsby";
 
 import Layout from '../components/layout';
-import SEO from '../components/seo';
+import Seo from '../components/seo';
 
 const NavLink = props => {
     if (!props.test) {
@@ -20,7 +20,7 @@ const IndexPage = ({ data, pageContext }) => {
     
     return (
         <Layout>
-            <SEO title={`${site.title} | ${site.tagline}`} />
+            <Seo title={`${site.title} | ${site.tagline}`} />
             <div className="posts">
                 {group.map(({ node }) => (
                     <div key={node.id} className="post">

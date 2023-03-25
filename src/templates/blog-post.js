@@ -2,7 +2,7 @@ import React from 'react';
 import { graphql } from 'gatsby';
 
 import Layout from '../components/layout';
-import SEO from '../components/seo';
+import Seo from '../components/seo';
 
 const BlogPost = ({ data }) => {
     const post = data.markdownRemark
@@ -10,7 +10,7 @@ const BlogPost = ({ data }) => {
 
     return (
         <Layout>
-            <SEO title={`${post.frontmatter.title} | ${site.title}`} />
+            <Seo title={`${post.frontmatter.title} | ${site.title}`} />
             <article className="post">
                 <h1 className="post-title">{post.frontmatter.title}</h1>
                 <span className="post-date">{post.frontmatter.date}</span>
