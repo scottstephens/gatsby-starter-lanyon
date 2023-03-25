@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link, StaticQuery, graphql } from 'gatsby';
 
-const Header = ({ data }) => (
+const Header1 = ({ data }) => (
     <header className="masthead">
         <div className="container">
             <h3 className="masthead-title">
@@ -12,7 +12,7 @@ const Header = ({ data }) => (
     </header>
 )
 
-export default props => (
+const Header2 = props => (
     <StaticQuery
         query={graphql`
             query {
@@ -25,6 +25,8 @@ export default props => (
             }
         `
         }
-        render={data => <Header data={data} {...props} />}
+        render={data => <Header1 data={data} {...props} />}
     />   
 )
+
+export default Header2;

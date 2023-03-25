@@ -3,7 +3,7 @@ import React from 'react';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 
-export default () => (
+const About = () => (
     <Layout>
         <SEO title="About Lanyon" />
 
@@ -44,3 +44,5 @@ export default () => (
         </p>
     </Layout>
 )
+
+export default About;

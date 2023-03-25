@@ -4,7 +4,7 @@ import { graphql } from 'gatsby';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 
-export default ({ data }) => {
+const BlogPost = ({ data }) => {
     const post = data.markdownRemark
     const site = data.site.siteMetadata
 
@@ -36,3 +36,5 @@ export const query = graphql`
         }
     }
 `
+
+export default BlogPost;
