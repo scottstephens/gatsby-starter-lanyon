@@ -8,5 +8,8 @@
  * @type {import('gatsby').GatsbyConfig}
  */
 module.exports = {
-  plugins: [],
+    siteMetadata: {
+        title: `Lanyon`,
+        tagline: `A Gatsby Theme`,
+    },
 }
