@@ -5,22 +5,26 @@
   </a>
 </p>
 <h1 align="center">
-  Gatsby's hello-world starter
+  A Lanyon inspired Gatsby starter
 </h1>
 
-Kick off your project with this hello-world boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
+This Gatsby starter is inspired by the [Lanyon Theme](https://lanyon.getpoole.com/) for the [Jekyll static site generator](http://jekyllrb.com/). It's a basic blog where posts are written in Markdown.
 
-_Have another more specific idea? You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.com/docs/gatsby-starters/)._
+Most of the heavy lifting was done in 2019 by [@mediasittich](https://github.com/mediasittich) in her [gatsby-starter-lanyon](https://github.com/mediasittich/gatsby-starter-lanyon) repo.
+
+I have rebased that work onto a modern (as of 2023) [gatsby-starter-hello-world](https://www.gatsbyjs.com/starters/gatsbyjs/gatsby-starter-hello-world).
+
+_Have another more idea? You may want to check out Gatsby's vibrant collection of [official and community-created starters](https://www.gatsbyjs.com/docs/gatsby-starters/)._
 
 ## 🚀 Quick start
 
 1.  **Create a Gatsby site.**
 
-    Use the Gatsby CLI ([install instructions](https://www.gatsbyjs.com/docs/tutorial/part-0/#gatsby-cli)) to create a new site, specifying the hello-world starter.
+    Use the Gatsby CLI ([install instructions](https://www.gatsbyjs.com/docs/tutorial/part-0/#gatsby-cli)) to create a new site
 
     ```shell
     # create a new Gatsby site using the hello-world starter
-    gatsby new my-hello-world-starter https://github.com/gatsbyjs/gatsby-starter-hello-world
+    gatsby new my-gatsby-starter-lanyon https://github.com/scottstephens/gatsby-starter-lanyon
     ```
 
 1.  **Start developing.**
@@ -28,7 +32,7 @@ _Have another more specific idea? You may want to check out our vibrant collecti
     Navigate into your new site’s directory and start it up.
 
     ```shell
-    cd my-hello-world-starter/
+    cd my-gatsby-starter-lanyon/
     gatsby develop
     ```
 
@@ -38,19 +42,20 @@ _Have another more specific idea? You may want to check out our vibrant collecti
 
     Note: You'll also see a second link: `http://localhost:8000/___graphql`. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby Tutorial](https://www.gatsbyjs.com/docs/tutorial/part-4/#use-graphiql-to-explore-the-data-layer-and-write-graphql-queries).
 
-    Open the `my-hello-world-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
+    Open the `my-gatsby-starter-lanyon` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
 
 ## 🚀 Quick start (Netlify)
 
 Deploy this starter with one click on [Netlify](https://app.netlify.com/signup):
 
-[<img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify" />](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-hello-world)
+[<img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify" />](https://app.netlify.com/start/deploy?repository=https://github.com/scottstephens/gatsby-starter-lanyon)
 
 ## 🧐 What's inside?
 
 A quick look at the top-level files and directories you'll see in a typical Gatsby project.
 
     .
+    ├── content
     ├── node_modules
     ├── src
     ├── .gitignore
@@ -61,6 +66,8 @@ A quick look at the top-level files and directories you'll see in a typical Gats
     ├── LICENSE
     ├── package.json
     └── README.md
+
+1. **`/content`**: This directory contains blog posts in markdown format.
 
 1.  **`/node_modules`**: This directory contains all of the modules of code that your project depends on (npm packages) are automatically installed.
 
@@ -76,7 +83,7 @@ A quick look at the top-level files and directories you'll see in a typical Gats
 
 1.  **`gatsby-ssr.js`**: This file is where Gatsby expects to find any usage of the [Gatsby server-side rendering APIs](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-ssr/) (if any). These allow customization of default Gatsby settings affecting server-side rendering.
 
-1.  **`LICENSE`**: This Gatsby starter is licensed under the 0BSD license. This means that you can see this file as a placeholder and replace it with your own license.
+1.  **`LICENSE`**: This Gatsby starter is licensed under the MIT license. This means that you can see this file as a placeholder and replace it with your own license.
 
 1.  **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
 
