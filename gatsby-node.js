@@ -8,9 +8,7 @@ exports.createPages = ({ graphql, actions }) => {
     return new Promise((resolve, reject) => {
         graphql(`
             {
-                posts: allMarkdownRemark(
-                    sort: { fields: [frontmatter___date], order: DESC }
-                ) {
+                posts: allMarkdownRemark(sort: {frontmatter: {date: DESC}}) {
                     edges {
                         node {
                             id
